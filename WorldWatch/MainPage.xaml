@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="WorldWatch.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WorldWatch"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontFamily="Global User Interface">
+
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="ApplicationViewStates">
+            <VisualState x:Name="Snapped"/>
+            <VisualState x:Name="Filled"/>
+            <VisualState x:Name="FullScreenLandscape"></VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+
+    <Grid Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+		<Rectangle RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FF303091" Stroke="#99000000" Margin="0">
+		</Rectangle>
+		<Viewbox Margin="0" HorizontalAlignment="Center">
+			<Canvas Height="100" Width="178">
+				<Path Data="M124.955,34.84 C123.061,42.6762 126.745,39.3049 118.925,43.215 C118.925,38.6125 126.935,34.4812 123.615,31.825 C123.741,31.9198 123.822,32.0677 123.95,32.16 C124.153,32.306 124.443,32.3184 124.62,32.495" Fill="#FF1D1D47" Height="10.827" Canvas.Left="151.392" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="33.376" UseLayoutRounding="False" Width="7.03"/>
+				<Path Data="M120.6,79.73 C116.129,80.3032 111.89,84.2623 111.89,74.37 C114.297,73.9689 115.943,72.938 118.255,72.36 C120.643,71.7629 122.35,73.4921 124.285,75.04 C127.002,77.214 131.601,81.1984 119.26,80.065" Fill="#FF1D1D47" Height="9.754" Canvas.Left="149.469" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="72.239" UseLayoutRounding="False" Width="16.531"/>
+				<Path Data="M59.295,39.53 C53.9767,39.53 40.5152,32.6725 37.855,41.54 C37.1353,43.9389 37.6777,49.3717 35.51,50.92 C31.7378,53.6144 32.16,54.9624 32.16,60.635 C43.778,62.9586 42.1244,56.7716 44.89,73.365 C46.3142,81.9103 47.1173,88.3531 63.65,81.74 C71.2551,78.698 69.345,84.6382 69.345,72.025 C69.345,68.3357 67.08,64.5201 65.66,60.97 C64.3769,57.7623 63.0742,54.151 62.31,50.585 C61.2169,45.4836 61.4105,42.247 62.31,36.85 C61.1159,37.7029 60.0943,39.0433 58.29,38.86" Fill="#FF1D1D47" Height="48.617" Canvas.Left="74.191" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="33.376" UseLayoutRounding="False" Width="38.413"/>
+				<Path Data="M65.995,54.605 C71.1561,54.605 75.1929,54.2394 80.065,53.265 C87.4934,51.7793 92.6382,56.615 99.16,56.615 C106.103,56.615 106.897,52.5593 112.225,46.565 C113.82,44.7708 110.747,37.5096 109.545,34.505 C110.359,34.098 110.675,33.9816 111.555,33.835 C111.555,30.0434 107.988,28.7079 114.235,28.14 C115.68,28.0086 119.668,22.0541 119.93,19.43 C120.712,11.6136 117.05,13.4 104.185,13.4 C96.144,13.4 86.2895,15.0858 78.725,12.06 C68.0998,7.80992 54.1649,10.6428 42.21,11.39 C37.0269,11.7139 33.032,12.9197 28.14,13.735 C28.14,20.4427 27.8422,17.1222 32.495,21.775 C33.4242,22.7042 35.51,30.2247 35.51,31.825 C35.51,31.6017 35.51,31.3783 35.51,31.155 C35.1567,31.8616 35.175,31.9058 35.175,32.83 C34.9517,32.83 34.7283,32.83 34.505,32.83 C34.6289,32.6442 34.4195,32.3663 34.505,32.16 C34.5654,32.0141 34.84,31.9829 34.84,31.825 C35.0119,32.6846 35.1893,33.3682 35.51,34.17 C35.6217,34.0583 35.7333,33.9467 35.845,33.835 C39.9117,39.5284 45.0233,36.5089 52.595,37.855" Fill="#FF1D1D47" Height="47.615" Canvas.Left="74.191" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="10" UseLayoutRounding="False" Width="77.149"/>
+				<Path Data="M8.375,27.135 C4.67871,26.8406 2.345,30.9793 2.345,24.12 C2.345,20.2399 0.416258,20.0012 6.7,19.43 C11.9762,18.9503 16.8927,20.0524 21.775,18.425 C23.1261,17.9746 34.4043,10.017 31.155,19.765 C30.5528,21.5716 25.0481,28.475 22.445,28.475 C21.8184,32.2345 21.71,32.495 28.475,32.495 C28.8349,35.014 31.693,37.9455 27.47,39.865 C23.7293,41.5653 22.3326,39.1994 21.44,44.555 C19.9372,53.5719 20.2006,51.3722 11.725,55.61 C9.74598,53.631 8.51445,53.7531 7.705,50.92 C6.94721,48.2677 5.58295,46.0047 5.025,43.215 C4.07425,38.4612 7.27591,32.7375 7.37,30.15" Fill="#FF1D1D47" Height="41.672" Canvas.Left="20.286" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="10" UseLayoutRounding="False" Width="30.674"/>
+				<Path Data="M11.725,61.305 C15.581,56.0468 11.5328,54.7291 20.435,58.29 C22.3458,59.0543 22.4083,59.6833 23.45,61.975 C24.7685,64.8757 25.5526,64.0919 29.145,64.99 C32.0577,65.7182 28.5273,71.3762 27.805,75.71 C27.0709,80.1145 26.13,83.9113 26.13,88.44 C24.8623,85.9045 22.7742,84.0676 21.775,81.07 C17.5417,79.6589 17.1669,77.1627 14.405,73.365 C10.8034,68.4129 10.0863,69.2252 11.725,61.305 z" Fill="#FF1D1D47" Height="33.148" Canvas.Left="30.572" Stretch="Fill" Stroke="#FFC5C5C5" Canvas.Top="51.672" UseLayoutRounding="False" Width="20.388"/>
+			</Canvas>
+		</Viewbox>
+		<Canvas Margin="0,262,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="280">
+			<local:ClockControl x:Name="Tokyo" />
+			<local:ClockControl x:Name="Beijing" Canvas.Left="-178" Canvas.Top="-64"/>
+			<local:ClockControl x:Name="Dubai" Canvas.Left="-354" Canvas.Top="116"/>
+			<local:ClockControl x:Name="London" Canvas.Left="-575" Canvas.Top="-103"/>
+			<local:ClockControl x:Name="NewYork" Canvas.Left="-874" Canvas.Top="1"/>
+			<local:ClockControl x:Name="SanFrancisco" Canvas.Left="-1014" Canvas.Top="50"/>
+		</Canvas>
+	</Grid>
+</Page>
