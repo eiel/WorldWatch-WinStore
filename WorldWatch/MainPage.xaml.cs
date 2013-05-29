@@ -30,6 +30,8 @@ namespace WorldWatch
             timer.Interval = TimeSpan.FromSeconds(0.5);
             timer.Tick += timer_Tick;
             timer.Start();
+
+            SizeChanged += MainPage_SizeChanged;
         }
 
         void timer_Tick(object sender, object e)
